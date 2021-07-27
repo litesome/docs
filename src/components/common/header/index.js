@@ -5,7 +5,7 @@ import "./Header.css";
 function Home() {
   return (
     <>
-      <header className="py-sm">
+      <header>
         <div className="container">
           <div className="row">
             <div className="l-sm-12 l-md-3 l-lg-3">
@@ -39,7 +39,6 @@ function Home() {
           </div>
         </div>
       </header>
-      <div className="clear" />
     </>
   );
 }
