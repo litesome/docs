@@ -11,7 +11,7 @@ function NotFount() {
             <div className="image image-404 center">
               <img className="" src={NotFound} alt="Litesome UI" />
             </div>
-            <h1>404, Page not found!</h1>
+            <h1>Page not found!</h1>
             <div className="my-lg text-md">
               Sorry, we can't find what you are looking for.
             </div>
