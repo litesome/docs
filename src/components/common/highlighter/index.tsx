@@ -1,7 +1,11 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const Markdown = ({ code }: any) => {
+interface Props {
+  code: React.ReactNode
+}
+
+const Markdown = ({ code }: Props) => {
   return (
     <>
       <SyntaxHighlighter

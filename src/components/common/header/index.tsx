@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+
 import logo from "./../../../assets/images/logo.svg";
 import "./Header.css";
 
-function Home() {
+const  Header = () => {
   return (
     <>
       <header>
@@ -43,4 +44,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Header;

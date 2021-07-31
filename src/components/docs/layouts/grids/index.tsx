@@ -1,14 +1,15 @@
 import React from "react";
 
 import DocLayout from "../../../../layouts/Docs/index";
-import CodeHighlighter from "../../../common/highlighter";
+import CodeHighlighter from "../../../common/Highlighter";
+
 const MDGridInitial = `<div class="row">
   <div class="l-sm-12 lg-md-4 l-lg-12 light">Column three</div>
   <div class="l-sm-12 lg-md-4 l-lg-12 light">Column six</div>
   <div class="l-sm-12 lg-md-4 l-lg-12 light">Column three</div>
 </div>`;
 
-function Grids() {
+const  Grids = () => {
   return (
     <>
       <DocLayout>

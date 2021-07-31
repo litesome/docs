@@ -1,5 +1,5 @@
 
-function Themes() {
+const Themes = () => {
   return (
     <div className="main-wrapper">
       <div className="sidebar dark">

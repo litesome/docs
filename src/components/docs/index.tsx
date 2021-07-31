@@ -1,10 +1,11 @@
 import React from "react";
 import DocLayout from "../../layouts/Docs";
-import Markdown from "../common/highlighter";
+import Markdown from '../common/Highlighter';
+
 const MDInstallYarn = `yarn add litesome`;
 const MDInstallNpm = `npm i litesome --save`;
 
-function Docs() {
+const  Docs = () => {
   return (
     <>
       <DocLayout>

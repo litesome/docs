@@ -4,7 +4,7 @@ import litesomeMind from "./../../assets/images/sketch-2.svg";
 import Header from "../common/Header";
 import "./Home.css";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Header />
