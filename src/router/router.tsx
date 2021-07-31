@@ -1,8 +1,8 @@
-import Home from "../components/home/index.js";
+import Home from "../components/home";
 import Docs from "../components/docs";
 import LayoutGrid from "../components/docs/layouts/grids";
 import ComponentsButtons from "../components/docs/components/buttons";
-import Themes from "../components/themes/index.js";
+import Themes from "../components/themes";
 import Test from "../components/test";
 import NotFound from "../components/NotFound";
 

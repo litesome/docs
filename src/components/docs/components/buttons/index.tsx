@@ -1,6 +1,7 @@
 import React from "react";
 import DocLayout from "../../../../layouts/Docs/index";
 import CodeHighlighter from "../../../common/highlighter";
+
 const MDButtonsDefault = `<button type='button' class='button primary'>Primary</button>
 <button type='button' class='button secondary'>Secondary</button>
 <button type='button' class='button success'>Success</button>
@@ -8,6 +9,7 @@ const MDButtonsDefault = `<button type='button' class='button primary'>Primary</
 <button type='button' class='button info'>Info</button>
 <button type='button' class='button light'>Light</button>
 <button type='button' class='button dark'>Dark</button>`;
+
 const MDButtonsBordered = `<button type='button' class='button bordered-primary'>Primary</button>
 <button type='button' class='button bordered-secondary'>Secondary</button>
 <button type='button' class='button bordered-success'>Success</button>
