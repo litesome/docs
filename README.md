@@ -5,7 +5,7 @@ Fast and easy-to-use CSS framework, built with simplicity in mind.
 
 # Contributors
 
-[Gilles Kagarama</b></sub>](https://github.com/kagaramag) | [Amani Mpangirwa JdD</b></sub>](https://github.com/Jaman-dedy)
+[Gilles Kagarama</b></sub>](https://github.com/kagaramag) | [Amani Mpangirwa JdD</b></sub>](https://github.com/Jaman-dedy) | [SENGAYIRE Prince</b></sub>](hhttps://github.com/sengayire)
 
 # Contribution
 

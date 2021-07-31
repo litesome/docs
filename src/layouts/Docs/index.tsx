@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../../components/common/header";
+import Header from '../../components/common/Header'
 import Sidebar from "./Sidebar";
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   return (
     <>
-      <Header />
+    <Header />
       <section>
         <div className="container">
           <div className="row">
