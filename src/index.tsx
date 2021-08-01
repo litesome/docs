@@ -1,14 +1,14 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import Routers from "./router/router";
 
 import "litesomeui";
 import "./assets/css/styles.css";
 
+import App from "./App";
+
 ReactDOM.render(
   <Router>
-    <Routers />
+    <App />
   </Router>,
   document.getElementById("root")
 );

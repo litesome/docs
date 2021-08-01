@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import NotFound from "./../../assets/images/404.svg";
 import "./NotFound.css";
-function NotFount() {
+
+const  NotFount = () => {
   return (
     <section className="home-wrapper center-vertical">
       <div className="container-sm position-relative">

@@ -1,5 +1,6 @@
 import "./Test.css";
-function Test() {
+
+const  Test = () => {
   return (
     <>
       <div className="container">Test area</div>

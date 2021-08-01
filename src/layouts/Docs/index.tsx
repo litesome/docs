@@ -1,7 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
+
 import Header from '../../components/common/Header'
-import Sidebar from "./Sidebar";
-const Layout = ({ children }: any) => {
+import Sidebar from './Sidebar';
+
+interface Props {
+  children: ReactNode
+}
+
+const Layout = ({ children }: Props) => {
   return (
     <>
     <Header />
