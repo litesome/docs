@@ -1,32 +1,24 @@
 import { Link } from "react-router-dom";
 
-const  Navigation = () => {
+const Sidebar = () => {
   return (
     <>
-      <nav className="navbar">
+      <nav>
         <ul className="list-block">
           <li>
             <Link to="/docs">Get started</Link>
           </li>
           <li>
-            <Link to="/docs/layout">Layout</Link>
-            <ul className="list-block nested-list">
-              <li>
-                <Link to="/docs/layouts/grids">Grid</Link>
-              </li>
-              <li>
-                <Link to="/docs/layouts/cards">Cards</Link>
-              </li>
-              <li>
-                <Link to="/docs/layouts/table">Table</Link>
-              </li>
-            </ul>
+            <Link to="/docs/structure/grids">Grid</Link>
           </li>
           <li>
             <Link to="/docs/components">Components</Link>
             <ul className="list-block nested-list">
               <li>
-                <Link to="/docs/components/heading">Forms</Link>
+                <Link to="/docs/components/box">Box</Link>
+              </li>
+              <li>
+                <Link to="/docs/components/forms">Forms</Link>
               </li>
               <li>
                 <Link to="/docs/components/buttons">Buttons</Link>
@@ -41,6 +33,9 @@ const  Navigation = () => {
                 <Link to="/docs/components/navbar">Navbar</Link>
               </li>
               <li>
+                <Link to="/docs/layouts/table">Table</Link>
+              </li>
+              <li>
                 <Link to="/docs/components/images">Images</Link>
               </li>
               <li>
@@ -53,7 +48,7 @@ const  Navigation = () => {
           </li>
           <li>
             <Link to="/docs/helpers">Helpers</Link>
-            <ul className="list-block nested-list">
+            {/* <ul className="list-block nested-list">
               <li>
                 <Link to="/docs/helpers/">Containers</Link>
               </li>
@@ -66,12 +61,12 @@ const  Navigation = () => {
               <li>
                 <Link to="/docs/helpers/positions">Positions</Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
         </ul>
       </nav>
     </>
   );
-}
+};
 
-export default Navigation;
+export default Sidebar;

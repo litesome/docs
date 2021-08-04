@@ -1,6 +1,6 @@
 import React from "react";
 import DocLayout from "../../../../layouts/Docs/index";
-import CodeHighlighter from "../../../common/Highlighter";
+import CodeHighlighter from "../../../common/highlighter";
 
 const MDButtonsDefault = `<button type='button' class='button primary'>Primary</button>
 <button type='button' class='button secondary'>Secondary</button>
@@ -18,7 +18,7 @@ const MDButtonsBordered = `<button type='button' class='button bordered-primary'
 <button type='button' class='button bordered-light'>Light</button>
 <button type='button' class='button bordered-dark'>Dark</button>`;
 
-const  Docs = () => {
+const  Buttons = () => {
   return (
     <>
       <DocLayout>
@@ -75,4 +75,4 @@ const  Docs = () => {
   );
 }
 
-export default Docs;
+export default Buttons;

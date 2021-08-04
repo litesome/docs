@@ -1,8 +1,8 @@
-import Docs from "../components/docs";
+import Docs from "../components/framework";
 
 export default {
   exact: true ,
-  name: 'Docs',
+  name: 'Documentation',
   protected: false,
   path: '/docs',
   component: Docs,

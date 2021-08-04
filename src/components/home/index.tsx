@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import litesomeMind from "./../../assets/images/sketch-2.svg";
 
-import Header from "../common/Header";
+import Header from "../common/header";
 import "./Home.css";
 
 const Home = () => {

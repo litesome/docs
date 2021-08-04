@@ -1,6 +1,6 @@
 import React from "react";
 import DocLayout from "../../layouts/Docs";
-import Markdown from '../common/Highlighter';
+import Markdown from '../common/highlighter';
 
 const MDInstallYarn = `yarn add litesome`;
 const MDInstallNpm = `npm i litesome --save`;
