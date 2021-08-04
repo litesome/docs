@@ -1,5 +1,5 @@
 
-const Themes = () => {
+const Templates = () => {
   return (
     <div className="main-wrapper">
       <div className="sidebar dark">
@@ -65,4 +65,4 @@ const Themes = () => {
   );
 }
 
-export default Themes;
+export default Templates;

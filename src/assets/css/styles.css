@@ -1,8 +1,27 @@
+:root {
+  --base-color: #34312d;
+  --main-bg-color: #f1f1f1;
+  --primary-color: #1463fd;
+  --secondary-color: #2b2d42;
+  --error-color: #e81a2b;
+  --info-color: #0b84a8;
+  --success-color: #07a24f;
+  --dark-color: #282c34;
+  --light-color: #dfdfdf;
+  --white-color: #ffffff;
+}
+body {
+  background: var(--main-bg-color);
+  color: var(--base-color);
+}
+a {
+  color: var(--base-color);
+}
 code.code-wrapper {
   font-family: "Open Sans", sans-serif;
   unicode-bidi: bidi-override;
   font-size: 1em !important;
-  color: #2e2a2c;
+  color: var(--base-color);
   word-wrap: break-word;
   background-color: #ffffff;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -15,111 +34,140 @@ code.code-wrapper {
 }
 /* Color Palette */
 
-/* Color background*/
 .primary {
-  background: #1364fd;
+  background: var(--primary-color);
 }
 .secondary {
-  background: #209ffe;
+  background: var(--secondary-color);
 }
 .error {
-  background: #e81a2b;
+  background: var(--error-color);
 }
 .info {
-  background: #e46013;
+  background: var(--info-color);
 }
 .success {
-  background: #07a24f;
+  background: var(--success-color);
 }
 .dark {
-  background: #282828;
+  background: var(--dark-color);
 }
 .light {
-  background: #dfdfdf;
+  background: var(--light-color);
+}
+.white {
+  background: var(--white-color);
 }
 /* Bordered buttons */
 .bordered-primary {
-  border-color: #1364fd;
-  color: #1364fd;
-  background: #ffffff;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 .bordered-secondary {
-  border-color: #209ffe;
-  color: #209ffe;
-  background: #ffffff;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .bordered-error {
-  border-color: #e81a2b;
-  color: #e81a2b;
-  background: #ffffff;
+  border-color: var(--error-color);
+  color: var(--error-color);
 }
 .bordered-info {
-  border-color: #e46013;
-  color: #e46013;
-  background: #ffffff;
+  border-color: var(--info-color);
+  color: var(--info-color);
 }
 .bordered-success {
-  border-color: #07a24f;
-  color: #07a24f;
-  background: #ffffff;
+  border-color: var(--success-color);
+  color: var(--success-color);
 }
 .bordered-dark {
-  border-color: #282828;
-  color: #282828;
-  background: #ffffff;
+  border-color: var(--dark-color);
+  color: var(--dark-color);
 }
 .bordered-light {
-  border-color: #dfdfdf;
-  background: #ffffff;
+  border-color: var(--light-color);
 }
 /* Adjust light buttons: background*/
 .button.light {
-  color: #282828;
+  color: var(--dark-color);
 }
 .bordered-light {
-  color: #282828;
+  color: var(--dark-color);
 }
 /* Color text */
 .text-primary {
-  color: #1364fd;
+  color: var(--primary-color);
 }
 .text-secondary {
-  color: #209ffe;
+  color: var(--secondary-color);
 }
 .text-error {
-  color: #e81a2b;
+  color: var(--error-color);
 }
 .text-info {
-  color: #e46013;
+  color: var(--info-color);
 }
 .text-success {
-  color: #07a24f;
+  color: var(--success-color);
 }
 .text-dark {
-  color: #282828;
+  color: var(--secondary-color);
 }
 .text-light {
-  color: #dfdfdf;
+  color: var(--light-color);
 }
 /* Color border  */
 .border-primary {
-  border-color: #1364fd;
+  border-color: var(--primary-color);
 }
 .border-secondary {
-  border-color: #209ffe;
+  border-color: var(--secondary-color);
 }
 .border-error {
-  border-color: #e81a2b;
+  border-color: var(--error-color);
 }
 .border-info {
-  border-color: #e46013;
+  border-color: var(--info-color);
 }
 .border-success {
-  border-color: #07a24f;
+  border-color: var(--success-color);
 }
 .border-dark {
-  border-color: #282828;
+  border-color: var(--secondary-color);
 }
 .border-light {
-  border-color: #dfdfdf;
+  border-color: var(--light-color);
 }
+/* Color border  */
+.box.primary,
+.box.secondary,
+.box.error,
+.box.info,
+.box.success,
+.box.dark {
+  color: var(--light-color);
+}
+.box {
+  color: var(--dark-color);
+}
+
+/* Navbar: Dark navigation */
+.navbar.dark,
+.navbar.dark a {
+  color: var(--light-color);
+}
+
+/* alert messages */
+
+.alert.success {
+  background: #d3f3e2;
+  color: var(--success-color);
+}
+.alert.info {
+  background: #ccebf5;
+  color: var(--info-color);
+}
+.alert.error {
+  background-color: #ffdce0;
+  color: var(--error-color);
+}
+

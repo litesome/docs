@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import NotFound from "./../../assets/images/404.svg";
+import NotFoundImage from "./../../assets/images/404.svg";
 import "./NotFound.css";
 
-const  NotFount = () => {
+const  NotFound = () => {
   return (
     <section className="home-wrapper center-vertical">
       <div className="container-sm position-relative">
         <div className="row">
           <div className="l-sm-12 l-md-12 l-lg-12 center-align">
             <div className="image image-404 center">
-              <img className="" src={NotFound} alt="Litesome UI" />
+              <img className="" src={NotFoundImage} alt="Litesome UI" />
             </div>
             <h1>Page not found!</h1>
             <div className="my-lg text-md">
@@ -26,4 +26,4 @@ const  NotFount = () => {
     </section>
   );
 }
-export default NotFount;
+export default NotFound;

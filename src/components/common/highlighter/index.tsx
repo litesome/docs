@@ -1,19 +1,19 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 interface Props {
-  code: React.ReactNode
+  code: React.ReactNode;
 }
 
-const Markdown = ({ code }: Props) => {
+const Highlighter = ({ code }: Props) => {
   return (
     <>
       <SyntaxHighlighter
         lineProps={{ style: { paddingBottom: 8 } }}
-        wrapLines={true}
+        wrapLines={false}
+        language="htmlbars"
         showLineNumbers={true}
-        language="markdown"
-        style={nnfxDark}
+        style={atomOneDark}
       >
         {code}
       </SyntaxHighlighter>
@@ -21,4 +21,4 @@ const Markdown = ({ code }: Props) => {
   );
 };
 
-export default Markdown;
+export default Highlighter;

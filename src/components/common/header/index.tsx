@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-
 import logo from "./../../../assets/images/logo.svg";
 import "./Header.css";
 
 const  Header = () => {
   return (
     <>
-      <header>
+      <header className="navbar-fixed" aria-label="navigation">
         <div className="container">
           <div className="row">
             <div className="l-sm-12 l-md-3 l-lg-3">
@@ -17,7 +16,7 @@ const  Header = () => {
               </div>
             </div>
             <div className="hide-sm l-md-9 l-lg-9">
-              <nav className="navbar right">
+              <nav aria-label="navibation" className="navbar right">
                 <ul className="list-inline">
                   <li>
                     <Link to="/">Home</Link>
@@ -26,13 +25,7 @@ const  Header = () => {
                     <Link to="/docs">Docs</Link>
                   </li>
                   <li>
-                    <Link to="/themes">Themes</Link>
-                  </li>
-                  <li>
                     <Link to="/about">Github</Link>
-                  </li>
-                  <li>
-                    <Link to="/about">NPM</Link>
                   </li>
                 </ul>
               </nav>
