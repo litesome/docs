@@ -1,5 +1,3 @@
-import React from "react";
-
 import DocLayout from "../../../layouts/Docs/index";
 import CodeHighlighter from "../../common/highlighter";
 
@@ -14,7 +12,7 @@ const  Grids = () => {
     <>
       <DocLayout>
         <h1>Introduction to Litesome grids</h1>
-        <p>Building a columns layout with Liteshow is so easy:</p>
+        <div className="lead">Building a columns layout with Litesome is so easy</div>
         <ol>
           <li>
             Add a <code className="code-wrapper">.row</code> container
@@ -25,9 +23,9 @@ const  Grids = () => {
         <CodeHighlighter code={MDGridInitial} />
         <div className="code-example">
           <div className="row">
-            <div className="l-sm-12 l-md-4 l-lg-4 light">Column three</div>
-            <div className="l-sm-12 l-md-4 l-lg-4 light">Column six</div>
-            <div className="l-sm-12 l-md-4 l-lg-4 light">Column three</div>
+            <div className="l-sm-12 l-md-4 l-lg-4 border">Column three</div>
+            <div className="l-sm-12 l-md-4 l-lg-4 border">Column six</div>
+            <div className="l-sm-12 l-md-4 l-lg-4 border">Column three</div>
           </div>
         </div>
         <h2>Columns classes</h2>

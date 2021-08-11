@@ -20,36 +20,24 @@ const MDHelperBox = `<div class='box'>
   </div>
 </div>`;
 
-const Box = () => {
+const Lists = () => {
   return (
     <>
       <DocLayout>
-        <h1>Box</h1>
-        <div className="lead">
-          Box provide a flexible element container with various options.
-        </div>
-        <h2>Simple box</h2>
-        <div>Default buttons</div>
+        <h1>Lists</h1>
+        <div className="lead">Vertical and horizontal lists</div>
         <div className="code-example">
-          <div className="box">
-            <div className="box-body">
-              <h2>Box title</h2>
-              <p>
-                The page header is a nice little feature to add appropriate
-                spacing around the headings on a page. This is particularly
-                helpful on a web page where you may have several post titles and
-                need a way to add distinction to each of them.
-              </p>
-            </div>
-            <div className="box-footer">
-              <button type="button" className="button primary">
-                Primary
-              </button>
-              <button type="button" className="button bordered-light">
-                Light
-              </button>
-            </div>
-          </div>
+          <ul className="list-block">
+            <li>
+              <a href="/">Grid</a>
+            </li>
+            <li>
+              <a href="/">Cards</a>
+            </li>
+            <li>
+              <a href="/">Table</a>
+            </li>
+          </ul>
         </div>
         <CodeHighlighter code={MDHelperBox} />
         <h2>Box variants</h2>
@@ -61,7 +49,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box primary">
                 <div className="box-body">
-                  <h2>Primary</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -72,7 +60,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box secondary">
                 <div className="box-body">
-                  <h2>Secondary</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -83,7 +71,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box dark">
                 <div className="box-body">
-                  <h2>Dark</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -94,7 +82,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box success">
                 <div className="box-body">
-                  <h2>Success</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -105,7 +93,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box error">
                 <div className="box-body">
-                  <h2>Danger</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -116,7 +104,7 @@ const Box = () => {
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box info">
                 <div className="box-body">
-                  <h2>Info</h2>
+                  <h2>Box title</h2>
                   <p>
                     The page header is a nice little feature to add appropriate
                     spacing around the headings on a page.
@@ -151,4 +139,4 @@ const Box = () => {
   );
 };
 
-export default Box;
+export default Lists;

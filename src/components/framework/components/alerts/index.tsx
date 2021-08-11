@@ -1,5 +1,5 @@
-import DocLayout from "../../../../layouts/Docs/index";
 import CodeHighlighter from "../../../common/highlighter";
+import DocLayout from "../../../../layouts/Docs/index";
 
 const MDAlerts = `<div className="alert success">
   Yuhuuu! You've got your $11.99 album from The Weeknd
