@@ -1,15 +1,14 @@
-import React from "react";
 import DocLayout from "../../layouts/Docs";
 import Markdown from '../common/highlighter';
 
 const MDInstallYarn = `yarn add litesome`;
 const MDInstallNpm = `npm i litesome --save`;
 
-const  Docs = () => {
+const  Utilities = () => {
   return (
     <>
       <DocLayout>
-        <h1>Get started</h1>
+        <h1>Utilities</h1>
         <Markdown code={MDInstallYarn} />
         <div>or</div>
         <Markdown code={MDInstallNpm} />
@@ -18,4 +17,4 @@ const  Docs = () => {
   );
 }
 
-export default Docs;
+export default Utilities;
