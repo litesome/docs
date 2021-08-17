@@ -1,6 +1,109 @@
-header {
-  padding: auto 30px;
-}
-.logo {
+/* .logo {
   max-width: 180px;
+}
+
+nav .logo {
+  width: 200px;
+}
+nav .left {
+  border: 1px solid green;
+}
+nav ul {
+  border: 1px solid red;
+}
+nav::before,
+nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+nav a {
+  flex-grow: 1;
+  padding: 0.3em 1em;
+  position: relative;
+  font-weight: 400;
+  display: block;
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
+nav .has-dropdown {
+  position: relative;
+}
+
+nav .has-dropdown:hover .dropdown {
+  display: block;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+nav .dropdown li {
+  padding: 1em 0.6em;
+}
+nav li {
+  position: relative;
+  display: inline-block;
+}
+nav .nested-list {
+  padding: 0.1em 0;
+  position: relative;
+  left: 15px;
+}
+nav .nested-list li {
+  padding: 0.1em 0;
+}
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+}
+*/
+header {
+  margin: auto;
+  padding: 0.3em 0.5em !important;
+}
+nav a {
+  flex-grow: 1;
+  padding: 0.3em 1em;
+  position: relative;
+  font-weight: 400;
+  display: block;
+}
+nav .active {
+  background: #e2e2e2;
+  border-radius: 4px;
+}
+header .logo,
+header .logo a {
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+}
+header .logo {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  header,
+  nav {
+    display: flex;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    /* .header {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1150px;
+    } */
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

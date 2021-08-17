@@ -13,7 +13,6 @@
   position: fixed;
   background: #e1e1e1;
   grid-area: sidebar;
-  padding: 20px;
 }
 .doc-content {
   grid-area: content;

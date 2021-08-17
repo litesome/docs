@@ -4,78 +4,93 @@ import "./Sidebar.css";
 const Sidebar = () => {
   return (
     <>
-      <nav className="sidebar">
-        <ul className="list-block">
+      <div className="sidebar">
+        <ul>
           <li>
-            <NavLink to="/docs">Get started</NavLink>
+            <NavLink exact to="/docs/get-started">
+              Get started
+            </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active-navlink" to="/docs/grids">
+            <NavLink exact to="/docs/grids">
               Grid
             </NavLink>
           </li>
           <li>
-            <NavLink to="/docs/components">Components</NavLink>
-            <ul className="list-block nested-list">
+            <NavLink exact to="/docs/components">
+              Components
+            </NavLink>
+            <ul className="nested-list">
               <li>
-                <NavLink to="/docs/components/box">Box</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/forms">Forms</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/buttons">Buttons</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/lists">Lists</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/alerts">Alerts</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/navbar">Navbar</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/table">Table</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/components/images">
-                  Images &amp; Avatars
+                <NavLink exact to="/docs/components/box">
+                  Box
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/docs/components/typography">Typography</NavLink>
+                <NavLink exact to="/docs/components/forms">
+                  Forms
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/docs/components/spinners">Spinners</NavLink>
+                <NavLink exact to="/docs/components/buttons">
+                  Buttons
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/lists">
+                  Lists
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/alerts">
+                  Alerts
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/navbar">
+                  Navbar &amp; Sidebar{" "}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/table">
+                  Table
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/images">
+                  Images
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/typography">
+                  Typography
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/docs/components/spinners">
+                  Spinners
+                </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink to="/docs/utilities">Utility classes</NavLink>
+            <NavLink exact to="/docs/utilities">
+              Utility classes
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/docs/colors">Colors</NavLink>
+            <NavLink exact to="/docs/colors">
+              Colors
+            </NavLink>
           </li>
+          <li className="separator" />
           <li>
-            <NavLink to="/icons">Icons</NavLink>
-            {/* <ul className="list-block nested-list">
-              <li>
-                <NavLink to="/docs/helpers/">Containers</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/helpers/text">Text</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/helpers/align">Alignment</NavLink>
-              </li>
-              <li>
-                <NavLink to="/docs/helpers/positions">Positions</NavLink>
-              </li>
-            </ul> */}
+            <NavLink exact to="/icons">
+              Icons
+            </NavLink>
           </li>
         </ul>
-      </nav>
+      </div>
     </>
   );
 };
