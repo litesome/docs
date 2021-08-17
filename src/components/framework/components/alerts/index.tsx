@@ -8,7 +8,7 @@ const MDAlerts = `<div className="alert success">
 You've got some friends nearby, stop looking at your phone and find them...
 </div>
 <div className="alert error">
-Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+Damn man! You screwed up the server this time. You should find a good excuse for your boss...
 </div>`;
 
 const Alerts = () => {
@@ -27,7 +27,7 @@ const Alerts = () => {
           </div>
           <div className="alert error">
             Damn man! You screwed up the server this time. You should find a
-            good excuse for your Boss...
+            good excuse for your boss...
           </div>
         </div>
         <CodeHighlighter code={MDAlerts} />

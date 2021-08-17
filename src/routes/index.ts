@@ -18,10 +18,13 @@ import spinners from "./spinners";
 import utilities from "./utilities";
 /* 4. Page templates */
 import templates from "./templates";
-/* 5. Dedicated for temporary testing */
+/* 5. Colors */
+import colors from "./colors";
+/* 6. Dedicated for temporary testing */
+
 /* End:Documentation */
 import test from "./test";
-/* 5. Not Found */
+/* 7. Not Found */
 import notFound from "./notFound";
 
 const Routes = [
@@ -39,6 +42,7 @@ const Routes = [
     tables,
     spinners,
     utilities,
+    colors,
     templates,
     notFound,
     test,

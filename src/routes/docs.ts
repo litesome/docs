@@ -4,6 +4,6 @@ export default {
   exact: true ,
   name: 'Documentation',
   protected: false,
-  path: '/docs',
+  path: '/docs/get-started',
   component: Docs,
 };

@@ -15,12 +15,14 @@ const MDButtonsBordered = `<button type='button' class='button bordered-primary'
 <button type='button' class='button bordered-light'>Light</button>
 <button type='button' class='button bordered-dark'>Dark</button>`;
 
-const  Buttons = () => {
+const Buttons = () => {
   return (
     <>
       <DocLayout>
         <h1>Buttons</h1>
-        <div className="lead">Call-to-action buttons in different style and sizes</div>
+        <div className="lead">
+          Call-to-action buttons in different style and sizes
+        </div>
         <div className="code-example">
           <button type="button" className="button primary">
             Primary
@@ -42,7 +44,7 @@ const  Buttons = () => {
           </button>
         </div>
         <CodeHighlighter code={MDButtonsDefault} />
-        <div>Bordered buttons</div>
+        <h3>Bordered buttons</h3>
         <div className="code-example">
           <button type="button" className="button bordered-primary">
             Primary
@@ -64,9 +66,35 @@ const  Buttons = () => {
           </button>
         </div>
         <CodeHighlighter code={MDButtonsBordered} />
+        <h3>Sizes of buttons</h3>
+        <div className="code-example">
+          <button type="button" className="button button-lg bordered-secondary">
+            Large Button
+          </button>
+          <button type="button" className="button bordered-secondary">
+            Default size
+          </button>
+          <button type="button" className="button button-sm bordered-secondary">
+            Small Button
+          </button>
+        </div>
+        <CodeHighlighter code={MDButtonsBordered} />
+        <h3>Buttons with icons</h3>
+        <div className="code-example">
+          <button type="button" className="button bordered-primary">
+            <i className="i-message" /> Message
+          </button>
+          <button type="button" className="button bordered-success">
+            <i className="i-check" /> Confirm action
+          </button>
+          <button type="button" className="button bordered-error">
+            <i className="i-play" /> Play song
+          </button>
+        </div>
+        <CodeHighlighter code={MDButtonsBordered} />
       </DocLayout>
     </>
   );
-}
+};
 
 export default Buttons;

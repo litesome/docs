@@ -16,11 +16,10 @@ const Layout = ({ children }: Props) => {
           <Sidebar />
         </div>
         <div className="doc-content">
-          <Header />
-          <div className="container-sm py-lg">
-            {children} <br />
-            <Footer />
-          </div>
+            <Header />
+          <div className="container-sm py-lg">{children}</div>
+          <hr />
+          <Footer />
         </div>
       </div>
     </>
