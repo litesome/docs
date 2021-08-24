@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import litesomeMind from "./../../assets/images/sketch-2.svg";
+import Header from "./../common/header";
 
-import Header from "../common/header";
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <div className="container">
+        <Header />
+      </div>
       <section className="home-wrapper center-vertical">
         <div className="container position-relative">
           <div className="row">
@@ -36,6 +38,6 @@ const Home = () => {
       </section>
     </>
   );
-}
+};
 
 export default Home;

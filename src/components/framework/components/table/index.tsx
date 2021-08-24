@@ -1,24 +1,48 @@
 import DocLayout from "../../../../layouts/Docs/index";
-import CodeHighlighter from "../../../common/highlighter";
+import { CodeHighlighter } from "../../../common/highlighter";
 
-const MDHelperBox = `<div class='box'>
-  <div class='box-body'>
-    <h2>Box title</h2>
-    <p>
-      The page header is a nice little feature to add appropriate spacing around the headings on a page.
-      This is particularly helpful on a web page where you may have several post titles and
-      need a way to add distinction to each of them.
-    </p>
-    </div>
-    <div>
-    <button type="button" class="button primary">
-      Primary
-    </button>
-    <button type="button" class="button bordered-light">
-      Light
-    </button>
-  </div>
-</div>`;
+const MDTable = `<table>
+  <thead>
+    <tr>
+      <th scope="col">Account</th>
+      <th scope="col">Due Date</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Account">Visa - 3412</td>
+      <td data-label="Due Date">04/01/2016</td>
+      <td data-label="Amount">$1,190</td>
+      <td data-label="Period">03/01/2016 - 03/31/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Account">
+        Visa - 6076
+      </td>
+      <td data-label="Due Date">03/01/2016</td>
+      <td data-label="Amount">$2,443</td>
+      <td data-label="Period">02/01/2016 - 02/29/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Account">
+        Corporate AMEX
+      </td>
+      <td data-label="Due Date">03/01/2016</td>
+      <td data-label="Amount">$1,181</td>
+      <td data-label="Period">02/01/2016 - 02/29/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Acount">
+        Visa - 3412
+      </td>
+      <td data-label="Due Date">02/01/2016</td>
+      <td data-label="Amount">$842</td>
+      <td data-label="Period">01/01/2016 - 01/31/2016</td>
+    </tr>
+  </tbody>
+</table>`;
 
 const Table = () => {
   return (
@@ -26,81 +50,51 @@ const Table = () => {
       <DocLayout>
         <h1>Table</h1>
         <div className="lead">Vertical and horizontal lists</div>
-        <CodeHighlighter code={MDHelperBox} />
-        <h2>Box variants</h2>
-        <div className="lead">
-          Boxes include various predefined &amp; customized options for you
-        </div>
         <div className="code-example">
-          <div className="row">
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box primary">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box secondary">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box dark">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box success">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box error">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box info">
-                <div className="box-body">
-                  <h2>Box title</h2>
-                  <p>
-                    The page header is a nice little feature to add appropriate
-                    spacing around the headings on a page.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Account</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Account">Visa - 3412</td>
+                <td data-label="Due Date">04/01/2016</td>
+                <td data-label="Amount">$1,190</td>
+                <td data-label="Period">03/01/2016 - 03/31/2016</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Account">
+                  Visa - 6076
+                </td>
+                <td data-label="Due Date">03/01/2016</td>
+                <td data-label="Amount">$2,443</td>
+                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Account">
+                  Corporate AMEX
+                </td>
+                <td data-label="Due Date">03/01/2016</td>
+                <td data-label="Amount">$1,181</td>
+                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Acount">
+                  Visa - 3412
+                </td>
+                <td data-label="Due Date">02/01/2016</td>
+                <td data-label="Amount">$842</td>
+                <td data-label="Period">01/01/2016 - 01/31/2016</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <CodeHighlighter code={MDTable} />
       </DocLayout>
     </>
   );

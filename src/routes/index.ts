@@ -1,5 +1,6 @@
 import home from "./home";
 /* Start:Documentation */
+
 /* 1. Structure */
 import docs from "./docs";
 import grids from "./grids";
@@ -12,6 +13,7 @@ import forms from "./forms";
 import lists from "./lists";
 import navbar from "./navbar";
 import images from "./images";
+import typography from "./typography";
 import tables from "./tables";
 import spinners from "./spinners";
 /* 3. Utility classes */
@@ -20,10 +22,13 @@ import utilities from "./utilities";
 import templates from "./templates";
 /* 5. Colors */
 import colors from "./colors";
+/* 5. Colors */
+import icons from "./icons";
 /* 6. Dedicated for temporary testing */
+import test from "./test";
 
 /* End:Documentation */
-import test from "./test";
+
 /* 7. Not Found */
 import notFound from "./notFound";
 
@@ -39,13 +44,15 @@ const Routes = [
     lists,
     navbar,
     images,
+    typography,
     tables,
     spinners,
     utilities,
     colors,
+    icons,
     templates,
-    notFound,
     test,
+    notFound,
 ];
 
 export default Routes;

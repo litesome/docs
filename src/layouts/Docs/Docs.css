@@ -18,6 +18,16 @@
   grid-area: content;
   width: calc(100% - 240px);
   left: 240px;
-  /* top: 30px; */
+  padding: 0 2em;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .doc-sidebar {
+    display: none;
+  }
+  .doc-content { 
+    width: 100%; 
+    left: 0;
+  }
 }

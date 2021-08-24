@@ -1,13 +1,13 @@
-import CodeHighlighter from "../../../common/highlighter";
 import DocLayout from "../../../../layouts/Docs/index";
+import { CodeHighlighter } from "../../../common/highlighter";
 
-const MDAlerts = `<div className="alert success">
+const MDAlerts = `<div class="alert success">
   Yuhuuu! You've got your $11.99 album from The Weeknd
 </div>
-<div className="alert info">
+<div class="alert info">
 You've got some friends nearby, stop looking at your phone and find them...
 </div>
-<div className="alert error">
+<div class="alert danger">
 Damn man! You screwed up the server this time. You should find a good excuse for your boss...
 </div>`;
 
@@ -25,7 +25,7 @@ const Alerts = () => {
             You've got some friends nearby, stop looking at your phone and find
             them...
           </div>
-          <div className="alert error">
+          <div className="alert danger">
             Damn man! You screwed up the server this time. You should find a
             good excuse for your boss...
           </div>

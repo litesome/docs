@@ -1,10 +1,11 @@
 import DocLayout from "../../../layouts/Docs/index";
-import CodeHighlighter from "../../common/highlighter";
+import { CodeHighlighter } from "../../common/highlighter";
+
 
 const MDGridInitial = `<div class="row">
-  <div class="l-sm-12 lg-md-4 l-lg-12 light">Column three</div>
-  <div class="l-sm-12 lg-md-4 l-lg-12 light">Column six</div>
-  <div class="l-sm-12 lg-md-4 l-lg-12 light">Column three</div>
+  <div class="l-sm-12 lg-md-4 l-lg-12">Column three</div>
+  <div class="l-sm-12 lg-md-4 l-lg-12">Column six</div>
+  <div class="l-sm-12 lg-md-4 l-lg-12">Column three</div>
 </div>`;
 
 const  Grids = () => {
@@ -23,9 +24,9 @@ const  Grids = () => {
         <CodeHighlighter code={MDGridInitial} />
         <div className="code-example">
           <div className="row">
-            <div className="l-sm-12 l-md-4 l-lg-4 border">Column three</div>
-            <div className="l-sm-12 l-md-4 l-lg-4 border">Column six</div>
-            <div className="l-sm-12 l-md-4 l-lg-4 border">Column three</div>
+            <div className="l-lg-4">Column three</div>
+            <div className="l-lg-4">Column six</div>
+            <div className="l-lg-4">Column three</div>
           </div>
         </div>
         <h2>Columns classes</h2>

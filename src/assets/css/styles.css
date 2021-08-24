@@ -1,10 +1,14 @@
 :root {
   --base-color: #34312d;
   --main-bg-color: #f2f2f2;
+  --primary-rgb: 19, 100, 253;
+  --secondary-rgb: 19, 100, 253;
+  --primary-rgb: 19, 100, 253;
+  --primary-rgb: 19, 100, 253;
   --primary-color: #1364fd;
   --secondary-color: #737681;
-  --error-color: #e4002b;
-  --info-color: #0b84a8;
+  --danger-color: #e4002b;
+  --info-color: #4b8fe2;
   --success-color: #07a24f;
   --dark-color: #282c34;
   --light-color: #dfdfdf;
@@ -19,6 +23,11 @@ body {
   color: var(--base-color);
 }
 a {
+  color: rgba(var(--primary-rgb), 0.8);
+}
+.sidebar a,
+nav a,
+header a {
   color: var(--base-color);
 }
 header {
@@ -27,7 +36,7 @@ header {
 code.code-wrapper {
   font-family: "Open Sans", sans-serif;
   font-size: 0.95em !important;
-  color: var(--error-color);
+  color: var(--danger-color);
   word-wrap: break-word;
   background-color: #f3d7d7;
   font-weight: 400;
@@ -46,8 +55,8 @@ code.code-wrapper {
 .secondary {
   background: var(--secondary-color);
 }
-.error {
-  background: var(--error-color);
+.danger {
+  background: var(--danger-color);
 }
 .info {
   background: var(--info-color);
@@ -85,9 +94,9 @@ code.code-wrapper {
   border-color: var(--secondary-color);
   color: var(--secondary-color);
 }
-.bordered-error {
-  border-color: var(--error-color);
-  color: var(--error-color);
+.bordered-danger {
+  border-color: var(--danger-color);
+  color: var(--danger-color);
 }
 .bordered-info {
   border-color: var(--info-color);
@@ -118,8 +127,8 @@ code.code-wrapper {
 .text-secondary {
   color: var(--secondary-color);
 }
-.text-error {
-  color: var(--error-color);
+.text-danger {
+  color: var(--danger-color);
 }
 .text-info {
   color: var(--info-color);
@@ -132,6 +141,9 @@ code.code-wrapper {
 }
 .text-light {
   color: var(--light-color);
+}
+.text-base-color {
+  color: var(--base-color);
 }
 .text-lighten-1 {
   color: var(--gray-lighten-1);
@@ -152,8 +164,8 @@ code.code-wrapper {
 .border-secondary {
   border-color: var(--secondary-color);
 }
-.border-error {
-  border-color: var(--error-color);
+.border-danger {
+  border-color: var(--danger-color);
 }
 .border-info {
   border-color: var(--info-color);
@@ -180,9 +192,9 @@ code.code-wrapper {
   color: var(--light-color);
   background: var(--success-color);
 }
-.box.error {
+.box.danger {
   color: var(--light-color);
-  background: var(--error-color);
+  background: var(--danger-color);
 }
 .box.info {
   color: var(--light-color);
@@ -194,7 +206,7 @@ code.code-wrapper {
 }
 /* .box.primary,
 .box.secondary,
-.box.error,
+.box.danger,
 .box.info,
 .box.success,
 .box.dark {
@@ -221,7 +233,7 @@ code.code-wrapper {
   background: #ccebf5;
   color: var(--info-color);
 }
-.alert.error {
+.alert.danger {
   background-color: #ffdce0;
-  color: var(--error-color);
+  color: var(--danger-color);
 }

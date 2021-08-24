@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
@@ -8,17 +7,17 @@ const Sidebar = () => {
         <ul>
           <li>
             <NavLink exact to="/docs/get-started">
-              Get started
+              <i className="icon i-001-shuttle" /> Get started
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/docs/grids">
-              Grid
+              <i className="icon i-grid" /> Grid
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/docs/components">
-              Components
+              <i className="icon i-components" /> Components
             </NavLink>
             <ul className="nested-list">
               <li>
@@ -48,7 +47,7 @@ const Sidebar = () => {
               </li>
               <li>
                 <NavLink exact to="/docs/components/navbar">
-                  Navbar &amp; Sidebar{" "}
+                  Navbar
                 </NavLink>
               </li>
               <li>
@@ -75,18 +74,17 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink exact to="/docs/utilities">
-              Utility classes
+              <i className="icon i-utilities" /> Utility classes
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/docs/colors">
-              Colors
+              <i className="icon i-color" /> Colors
             </NavLink>
           </li>
-          <li className="separator" />
           <li>
-            <NavLink exact to="/icons">
-              Icons
+            <NavLink exact to="/docs/icons">
+              <i className="icon i-icons" /> Icons
             </NavLink>
           </li>
         </ul>

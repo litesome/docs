@@ -1,5 +1,5 @@
 import DocLayout from "../../../../layouts/Docs/index";
-import CodeHighlighter from "../../../common/highlighter";
+import { CodeHighlighter } from "../../../common/highlighter";
 
 const MDHelperBox = `<div class='box'>
   <div class='box-body'>
@@ -103,7 +103,7 @@ const Box = () => {
               </div>
             </div>
             <div className="l-sm-12 l-md-4 l-lg-4">
-              <div className="box error">
+              <div className="box danger">
                 <div className="box-body">
                   <h2>Danger</h2>
                   <p>

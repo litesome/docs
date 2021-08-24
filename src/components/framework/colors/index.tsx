@@ -1,13 +1,12 @@
 import DocLayout from "../../../layouts/Docs/index";
-import CodeHighlighter from "../../common/highlighter";
-
-const MDColor = `<div className="text-primary">primary color</div>
-<div className="text-secondary">secondary color</div>
-<div className="text-success">success color</div>
-<div className="text-info">info color</div>
-<div className="text-error">error color</div>
-<div className="text-dark">dark color</div>
-<div className="text-light">light color</div>`;
+import { CodeHighlighter, CodeInline } from "../../common/highlighter";
+const MDColor = `<div class="text-primary">primary color</div>
+<div class="text-secondary">secondary color</div>
+<div class="text-success">success color</div>
+<div class="text-info">info color</div>
+<div class="text-danger">danger color</div>
+<div class="text-dark">dark color</div>
+<div class="text-light">light color</div>`;
 
 const Box = () => {
   return (
@@ -24,11 +23,16 @@ const Box = () => {
           <div className="py-sm text-secondary">secondary color</div>
           <div className="py-sm text-success">success color</div>
           <div className="py-sm text-info">info color</div>
-          <div className="py-sm text-error">error color</div>
+          <div className="py-sm text-danger">danger color</div>
           <div className="py-sm text-dark">dark color</div>
           <div className="py-sm text-light">light color</div>
         </div>
         <CodeHighlighter code={MDColor} />
+        <h2>Reset text to default base color</h2>
+        <p>
+          <code className="code-wrapper">.text-base-color</code> reset color of
+          text and their children element with default base color in the theme
+        </p>
       </DocLayout>
     </>
   );
