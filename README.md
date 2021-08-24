@@ -1,19 +1,3 @@
-# [Litesome 1.0](https://litesome.github.io)
+# [Litesome CSS Framework](https://github.com/litesome/litesome#readme)
 
-Fast and easy-to-use CSS framework, built with simplicity in mind.
-
-
-# Contributors
-
-[Gilles Kagarama</b></sub>](https://github.com/kagaramag) | [Amani Mpangirwa JdD</b></sub>](https://github.com/Jaman-dedy) | [SENGAYIRE Prince</b></sub>](https://github.com/sengayire)
-
-# Contribution
-
-Please before making a PR, read first this [Contributing Guideline](./CONTRIBUTING.md)
-
-## License
-
-MIT
-
-## Author
-Gilles Kagarama
+Litesome CSS Framework is collection of CSS styles to consistently make simple and clean websites. It makes browsers render all elements faster and beautifies semantic HTML markups. It is  easy-to-use and built with simplicity in mind.
