@@ -1,8 +1,8 @@
 import DocLayout from "../../layouts/Docs";
 import { CodeHighlighter } from "../common/highlighter";
 
-const MDInstallYarn = `yarn add litesome`;
-const MDInstallNpm = `npm i litesome --save`;
+const MDInstallYarn = `yarn add @litesome/litesome`;
+const MDInstallNpm = `npm i @litesome/litesome --save`;
 
 const Utilities = () => {
   return (

@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import "@litesome/litesome";
+import "litesome";
 import "./assets/css/styles.css";
 
 import App from "./App";

@@ -19,7 +19,7 @@ const Home = () => {
                 Sophistication is the art of being simple
               </div>
               <div className="my-lg">
-                <Link className="button primary" to="/docs">
+                <Link className="button primary" to="/docs/get-started">
                   Get started
                 </Link>
               </div>
