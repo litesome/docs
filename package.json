@@ -2,7 +2,7 @@
   "name": "litesome",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://litesome.github.io/docs",
+  "homepage": "./",
   "scripts": {
     "build": "react-scripts build",
     "deploy": "gh-pages -b master -d build",
