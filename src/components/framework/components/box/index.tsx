@@ -1,5 +1,6 @@
 import DocLayout from "../../../../layouts/Docs/index";
 import { CodeHighlighter } from "../../../common/highlighter";
+import ImagePlaceholder from './../../../../assets/images/placeholder.png'
 
 const MDHelperBox = `<div class='box'>
   <div class='box-body'>
@@ -125,27 +126,38 @@ const Box = () => {
               </div>
             </div>
           </div>
+          <h2>Box with image</h2>
+          <div>Handling image in the box</div>
+          <div className="code-example">
+            <div className="row">
+              <div className="l-sm-12 l-md-6 l-lg-6">
+                <div className="box  body-center">
+                  <div className="box-body">
+                    <div className="box-image">
+                      <img className="" src={ImagePlaceholder} alt="Lists" />
+                    </div>
+                    <h2>Box title</h2>
+                    <p>
+                      The page header is a nice little feature to add
+                      appropriate spacing around the headings on a page. This is
+                      particularly helpful on a web page where you may have
+                      several post titles and need a way to add distinction to
+                      each of them.
+                    </p>
+                  </div>
+                  <div className="box-footer">
+                    <button type="button" className="button primary">
+                      Primary
+                    </button>
+                    <button type="button" className="button bordered-light">
+                      Light
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* <div className="box primary">
-          <h2>Dr Lorem</h2>
-          <div> Lorem Ipsum </div>
-        </div>
-        <div className="box secondary">
-          <h2>Dr Lorem</h2>
-          <div> Lorem Ipsum </div>
-        </div>
-        <div className="box success">
-          <h2>Dr Lorem</h2>
-          <div> Lorem Ipsum </div>
-        </div>
-        <div className="box info">
-          <h2>Dr Lorem</h2>
-          <div> Lorem Ipsum </div>
-        </div>
-        <div className="box warning">
-          <h2>Dr Lorem</h2>
-          <div> Lorem Ipsum </div>
-        </div> */}
       </DocLayout>
     </>
   );
