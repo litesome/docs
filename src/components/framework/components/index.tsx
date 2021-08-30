@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import DocLayout from "../../../layouts/Docs/index";
+import "./Components.css";
 import Lists from "./../../../assets/images/lists.svg";
 import Box from "./../../../assets/images/box.svg";
 import Images from "./../../../assets/images/image.svg";
@@ -149,7 +150,10 @@ const Components = () => {
             </div>
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box">
-                <Link className="text-base-color" to="/docs/components/typography">
+                <Link
+                  className="text-base-color"
+                  to="/docs/components/typography"
+                >
                   <div className="box-image">
                     <img className="" src={Typography} alt="Lists" />
                   </div>
@@ -165,7 +169,10 @@ const Components = () => {
             </div>
             <div className="l-sm-12 l-md-4 l-lg-4">
               <div className="box">
-                <Link className="text-base-color" to="/docs/components/spinners">
+                <Link
+                  className="text-base-color"
+                  to="/docs/components/spinners"
+                >
                   <div className="box-image">
                     <img className="" src={Spinner} alt="Lists" />
                   </div>
