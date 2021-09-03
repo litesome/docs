@@ -50,7 +50,7 @@ const Table = () => {
       <DocLayout>
         <h1>Table</h1>
         <div className="lead">
-          Easily create nice looking tables, which come in different styles.
+          Nice looking tables, which come in different styles
         </div>
         <div className="code-example">
           <table>

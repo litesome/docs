@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 
 import Header from "../../components/common/header";
-import Sidebar from "../../components/common/sidebar";
 import Footer from "../../components/common/footer";
+import "./Main.css";
 interface Props {
   children: ReactNode;
 }
@@ -10,16 +10,12 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <div className="wrap-doc-layout">
-        <div className="doc-sidebar">
-          <Sidebar />
+      <div className="wrap-main-layout">
+        <div className="container">
+          <Header />
         </div>
-        <div className="doc-content">
-            <Header />
-          <div className="container-sm py-lg">{children}</div>
-          <hr />
-          <Footer />
-        </div>
+        <div>{children}</div>
+        <Footer />
       </div>
     </>
   );

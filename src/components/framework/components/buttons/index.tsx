@@ -68,14 +68,23 @@ const Buttons = () => {
         <CodeHighlighter code={MDButtonsBordered} />
         <h3>Sizes of buttons</h3>
         <div className="code-example">
-          <button type="button" className="button button-lg bordered-secondary">
-          <i className="i-message" /> Large Button
+          <button type="button" className="button primary button-lg">
+            Large Button
           </button>
-          <button type="button" className="button bordered-secondary">
+          <button type="button" className="button primary">
             Default size
           </button>
-          <button type="button" className="button button-sm bordered-secondary">
-          <i className="i-message" /> Small Button
+          <button type="button" className="button primary button-sm">
+            Small Button
+          </button>
+        </div>
+        <h3>Button block</h3>
+        <div className="code-example">
+          <button
+            type="button"
+            className="button button-lg button-block primary"
+          >
+            Block button
           </button>
         </div>
         <CodeHighlighter code={MDButtonsBordered} />

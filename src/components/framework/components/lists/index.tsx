@@ -40,7 +40,9 @@ const Lists = () => {
     <>
       <DocLayout>
         <h1>Lists</h1>
-        <div className="lead">Vertical and horizontal lists</div>
+        <div className="lead">
+          Flexible lists for displaying a series of content.
+        </div>
         <h3>Block list</h3>
         <div className="code-example">
           <ul className="list-block">

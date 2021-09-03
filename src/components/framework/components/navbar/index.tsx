@@ -18,7 +18,9 @@ const Navbar = () => {
     <>
       <DocLayout>
         <h1>Navbar</h1>
-        <div className="lead">Easy way of managing navigation menu</div>
+        <div className="lead">
+          Navbar supports brand identity, dropdown, and more
+        </div>
         <div className="code-example">
           <nav aria-label="navigation" className="navbar">
             <NavLink exact to="/">

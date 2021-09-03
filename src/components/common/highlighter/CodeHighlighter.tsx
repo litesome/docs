@@ -1,14 +1,12 @@
-
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-
 interface Props {
   code: React.ReactNode;
 }
 
 const CodeHighlighter = ({ code }: Props) => {
   return (
-    <>
+    <div className="codehighlighter">
       <SyntaxHighlighter
         lineProps={{ style: { paddingBottom: 8 } }}
         wrapLines={false}
@@ -18,7 +16,7 @@ const CodeHighlighter = ({ code }: Props) => {
       >
         {code}
       </SyntaxHighlighter>
-    </>
+    </div>
   );
 };
 
