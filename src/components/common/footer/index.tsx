@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container-sm py-lg">
+        <div className="container-sm center-align py-lg">
           <div>
             &copy; 2021, <b>Litesome Framework</b>, All rights reserved. v0.1.5
           </div>

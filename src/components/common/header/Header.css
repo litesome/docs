@@ -1,4 +1,4 @@
-header {
+/* header {
   margin: auto;
   padding: 0.3em 0.5em !important;
 }
@@ -23,20 +23,10 @@ header .logo {
   width: 100%;
 }
 
-/* @media (min-width: 769px) {
-  header,
-  nav {
-    display: flex;
-  }
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
 
 @media (min-width: 1025px) {
   header {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+} */

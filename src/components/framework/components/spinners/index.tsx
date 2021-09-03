@@ -9,7 +9,7 @@ const Spinners = () => {
     <>
       <DocLayout>
         <h1>Spinners</h1>
-        <div className="lead">Spinners is used for loading or updating.</div>
+        <div className="lead">Spinners are used for loading or updating.</div>
         <div>
           Using spinner is easy very simple, You can add the
           <code className="code-wrapper">.spinner</code> class to a container

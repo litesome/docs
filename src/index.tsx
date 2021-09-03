@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import "@litesome/litesome";
 import "./assets/css/styles.css";
+import "./assets/css/test.css";
 
 import App from "./App";
 

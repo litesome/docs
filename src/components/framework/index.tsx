@@ -14,7 +14,7 @@ const Utilities = () => {
           make simple and clean websites. It makes browsers render all elements
           faster and beautifies semantic HTML markups
         </div>
-        <h3>How to install?</h3>
+        <h2>How to install?</h2>
         <h4>Manually(recommended)</h4>
         <CodeHighlighter code={MDInstallYarn} />
         <div>or</div>

@@ -11,8 +11,7 @@ const Typography = () => {
       <DocLayout>
         <h1>Typography</h1>
         <div className="lead">
-          Typography sets default styles for headings, paragraphs, text lead,
-          etc
+          Semantic styles for headings, paragraphs, text lead, etc
         </div>
         <h2>Heading</h2>
         <div className="code-example">
@@ -53,10 +52,6 @@ const Typography = () => {
           viverra id. Nulla facilisi. Maecenas faucibus sed sem a vehicula.
           Praesent ullamcorper vehicula auctor. Proin at imperdiet diam.
         </div>
-        ˝<h2>Text aligment</h2>
-        <div className="left-align lead">Text aligned in the center</div>
-        <div className="center-align lead">Text aligned in the center</div>
-        <div className="right-align lead">Text aligned in the center</div>
       </DocLayout>
     </>
   );

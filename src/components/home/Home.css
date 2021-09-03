@@ -1,5 +1,7 @@
 .home-wrapper {
-  height: 80vh;
+  min-height: 70vh;
+  position: relative;
+  /* background: var(--primary-color); */
 }
 .center-vertical {
   display: flex;
@@ -19,8 +21,8 @@
   background-repeat: no-repeat;
 }
 .litesome-sketch {
-  width: 800px;
+  width: 600px;
   left: 0px;
-  top: -150px;
+  top: -100px;
   position: absolute;
 }
