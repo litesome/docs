@@ -1,7 +1,6 @@
 .home-wrapper {
   min-height: 70vh;
   position: relative;
-  /* background: var(--primary-color); */
 }
 .center-vertical {
   display: flex;

@@ -46,6 +46,11 @@ const Sidebar = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink exact to="/docs/components/badges-and-status">
+                  Badge &amp; Status
+                </NavLink>
+              </li>
+              <li>
                 <NavLink exact to="/docs/components/navbar">
                   Navbar
                 </NavLink>
