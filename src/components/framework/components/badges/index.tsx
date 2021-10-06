@@ -13,14 +13,14 @@ const MDBadgeWithButtons = `<button type="button" class="button primary">Notific
 <button type="button" class="button border-secondary">Products<span class="badge inline-badge danger">New</span></button>
 <button type="button" class="button secondary">Products<span class="badge inline-badge">New</span></button>`;
 const MDStatus = `<span class="status success"></span>`;
-const MDDefaultBadges = `<button type="button">Notifications<span class="badge">+9</span></button>
-<button type="button">Notifications<span class="badge dot-badge"></span></button>`;
-const MDBadgesWithNumbers = `<button type="button">Messages<span class="badge">0</span></button>
+const MDDefaultBadges = `<button type="button" className="button">Notifications<span class="badge">+9</span></button>
+<button type="button" className="button">Notifications<span class="badge dot-badge"></span></button>`;
+const MDBadgesWithNumbers = `<button type="button" className="button">Messages<span class="badge">0</span></button>
 <button type="button" class="secondary">Messages<span class="badge success">45</span></button>
 <button type="button" class="outline">Messages<span class="badge warning">2</span></button>
 <button type="button" class="outline">Messages<span class="badge info">39</span></button>
 <button type="button" class="secondary">Messages<span class="badge danger">+9</span></button>`;
-const MDBadgesWithLabels = `<button type="button">Messages<span class="badge inline-badge">New</span></button>
+const MDBadgesWithLabels = `<button type="button" className="button">Messages<span class="badge inline-badge">New</span></button>
 <button type="button" class="secondary">Messages<span class="badge inline-badge success">New</span></button>
 <button type="button" class="outline">Messages<span class="badge inline-badge warning">New</span></button>
 <button type="button" class="outline">Messages<span class="badge inline-badge info">New</span></button>
@@ -56,11 +56,11 @@ const Badges = () => {
         <h3>Badge with buttons</h3>
         <div className="code-example">
           <h4>Default badges</h4>
-          <button type="button">
+          <button type="button" className="button">
             Notifications
             <span className="badge">+9</span>
           </button>
-          <button type="button">
+          <button type="button" className="button">
             Notifications
             <span className="badge dot-badge"></span>
           </button>
@@ -68,23 +68,23 @@ const Badges = () => {
         <CodeHighlighter code={MDDefaultBadges} />
         <div className="code-example">
           <h4>Badge with numbers</h4>
-          <button type="button">
+          <button type="button" className="button">
             Messages
             <span className="badge">0</span>
           </button>
-          <button type="button" className="secondary">
+          <button type="button" className="button secondary">
             Messages
             <span className="badge success">45</span>
           </button>
-          <button type="button" className="outline">
+          <button type="button" className="button outline">
             Messages
             <span className="badge warning">2</span>
           </button>
-          <button type="button" className="outline">
+          <button type="button" className="button outline">
             Messages
             <span className="badge info">39</span>
           </button>
-          <button type="button" className="secondary">
+          <button type="button" className="button secondary">
             Messages
             <span className="badge danger">+9</span>
           </button>
@@ -92,24 +92,24 @@ const Badges = () => {
         <CodeHighlighter code={MDBadgesWithNumbers} />
         <div className="code-example">
           <h4>Inline badge with label</h4>
-          <button type="button">
+          <button type="button" className="button">
             Messages
             <span className="badge inline-badge">New</span>
           </button>
-          <button type="button" className="secondary">
+          <button type="button" className="button secondary">
             Messages
             <span className="badge inline-badge success">New</span>
           </button>
-          <button type="button" className="outline">
+          <button type="button" className="button outline">
             Messages
             <span className="badge inline-badge warning">New</span>
           </button>
-          <button type="button" className="outline">
+          <button type="button" className="button outline">
             Messages
             <span className="badge inline-badge info">New</span>
           </button>
           <div className="clear" />
-          <button type="button" className="outline">
+          <button type="button" className="button outline">
             Messages
             <span className="badge inline-badge">New</span>
           </button>

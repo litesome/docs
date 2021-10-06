@@ -1,25 +1,25 @@
 import DocLayout from "../../../../layouts/Docs/index";
 import { CodeHighlighter } from "../../../common/highlighter";
 
-const MDButtonsDefault = `<button type='button'>Primary</button>`;
-const MDButtons = `<button type="button">Get started</button>
-<button type="button" class="outline">Outline</button>
-<button type="button" class="secondary">Secondary</button>
-<button type="button" class="danger">Danger</button>
-<button type="button" disabled>Disabled</button>`;
-const MDButtonWithSpinners = `<button type="button"><span class="loading" />Get started</button>
-<button type="button" class="outline"><span class="loading" />Outline</button>
-<button type="button" class="secondary"><span class="loading" />Get started</button>
-<button type="button" class="danger"><span class="loading" />Danger</button>
-<button type="button" disabled><span class="loading" />Disabled</button>`;
-const MDButtonBlock = `<button type="button" class="button-block">Block button</button>`;
+const MDButtonsDefault = `<button type='button' class="button">Primary</button>`;
+const MDButtons = `<button type="button" class="button">Get started</button>
+<button type="button" class="button outline">Outline</button>
+<button type="button" class="button secondary">Secondary</button>
+<button type="button" class="button danger">Danger</button>
+<button type="button" class="button" disabled>Disabled</button>`;
+const MDButtonWithSpinners = `<button type="button" class="button"><span class="loading" />Get started</button>
+<button type="button" class="button outline"><span class="loading" />Outline</button>
+<button type="button" class="button secondary"><span class="loading" />Get started</button>
+<button type="button" class="button danger"><span class="loading" />Danger</button>
+<button type="button" class="button" disabled><span class="loading" />Disabled</button>`;
+const MDButtonBlock = `<button type="button" class="button button-block">Block button</button>`;
 const MDButtonSize = `<button type="button" class="button primary button-lg">Large Button</button>
 <button type="button" class="button primary">Default size</button>
 <button type="button" class="button primary button-sm">Small Button</button>`;
-const MDButtonsWithIcons = `<button type="button"><i class="i-message" /> Message</button>
-<button type="button" class="outline"><i class="i-check" /> Confirm action</button>
-<button type="button" class="secondary"><i class="i-check" /> Confirm action</button>
-<button type="button" class="danger"><i class="i-play" /> Play song</button>`;
+const MDButtonsWithIcons = `<button type="button" class="button"><i class="i-message" /> Message</button>
+<button type="button" class="button outline"><i class="i-check" /> Confirm action</button>
+<button type="button" class="button secondary"><i class="i-check" /> Confirm action</button>
+<button type="button" class="button danger"><i class="i-play" /> Play song</button>`;
 
 const Buttons = () => {
   return (
@@ -29,23 +29,32 @@ const Buttons = () => {
         <div className="lead">
           Call-to-action buttons in different style and sizes
         </div>
-        <div>By default, a button without any class takes primary background color of the platform</div>
-        <button type="button">Submit</button>
+        <div>
+          By default, a button without any class takes primary background color
+          of the platform
+        </div>
+        <button type="button" className="button">Submit</button>
+        <a href="/" className="button">Submit</a>
         <CodeHighlighter code={MDButtonsDefault} />
         <h2>Button variants</h2>
         <div className="box">
           <div className="code-example">
-            <button type="button">Get started</button>
-            <button type="button" className="outline">
+            <button type="button" className="button">
+              Get started
+            </button>
+            <button type="button" className="button outline">
               Outline
             </button>
-            <button type="button" className="secondary">
+            <button type="button" className="button secondary">
               Secondary
             </button>
-            <button type="button" className="danger">
+            <button type="button" className="button danger">
               Danger
             </button>
-            <button type="button" disabled>
+            <button type="button"  className="button" disabled>
+              Disabled
+            </button>
+            <button type="button" className="button outline" disabled>
               Disabled
             </button>
           </div>
@@ -54,21 +63,21 @@ const Buttons = () => {
         <h2>Button with spinners</h2>
         <div className="box">
           <div className="code-example">
-            <button type="button">
+            <button type="button" className="button">
               <span className="loading" /> Get started
             </button>
-            <button type="button" className="outline">
+            <button type="button" className="button outline">
               <span className="loading" />
               Outline
             </button>
-            <button type="button" className="secondary">
+            <button type="button" className="button secondary">
               <span className="loading" /> Get started
             </button>
-            <button type="button" className="danger">
+            <button type="button" className="button danger">
               <span className="loading" />
               Danger
             </button>
-            <button type="button" disabled>
+            <button type="button" className="button" disabled>
               <span className="loading" />
               Disabled
             </button>
@@ -81,13 +90,13 @@ const Buttons = () => {
         <h3>Sizes of buttons</h3>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button primary button-lg">
+            <button type="button" className="button button primary button-lg">
               Large Button
             </button>
-            <button type="button" className="button primary">
+            <button type="button" className="button button primary">
               Default size
             </button>
-            <button type="button" className="button primary button-sm">
+            <button type="button" className="button button primary button-sm">
               Small Button
             </button>
           </div>
@@ -96,7 +105,7 @@ const Buttons = () => {
         <h3>Button block</h3>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button-block">
+            <button type="button" className="button button-block">
               Block button
             </button>
           </div>
@@ -105,16 +114,16 @@ const Buttons = () => {
         <h3>Buttons with icons</h3>
         <div className="box">
           <div className="code-example">
-            <button type="button">
+            <button type="button" className="button">
               <i className="i-message" /> Message
             </button>
-            <button type="button" className="outline">
+            <button type="button" className="button outline">
               <i className="i-check" /> Confirm action
             </button>
-            <button type="button" className="secondary">
+            <button type="button" className="button secondary">
               <i className="i-check" /> Confirm action
             </button>
-            <button type="button" className="danger">
+            <button type="button" className="button danger">
               <i className="i-play" /> Play song
             </button>
           </div>

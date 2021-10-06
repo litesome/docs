@@ -24,6 +24,14 @@ const Grids = () => {
         </ol>
         <div className="code-example"></div>
         <CodeHighlighter code={MDGridInitial} />
+        <div className="row">
+            <div className="l-sm-12 l-md-12 l-lg-12">
+              <div className="box">Column</div>
+            </div>
+            <div className="l-sm-12 l-md-12 l-lg-12">
+              <div className="box">Column</div>
+            </div>
+          </div>
         <div className="code-example">
           <div className="row light">
             <div className="l-sm-12 l-md-6 l-lg-3">
