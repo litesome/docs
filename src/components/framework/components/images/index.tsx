@@ -20,31 +20,37 @@ const Images = () => {
         <div className="lead">
           Customized image container in different scenarios
         </div>
-        <div className="code-example">
-          <div className="image">
-            <img src={LakeImage} alt="city" />
+        <div className="box">
+          <div className="code-example">
+            <div className="image">
+              <img src={LakeImage} alt="city" />
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDDefualtImage} />
         <h2>User avatar with name</h2>
-        <div className="code-example">
-
-          <div className="avatar">
-            <img src={Avatar} alt="user" />
+        <div className="box">
+          <div className="code-example">
+            <button className="avatar">
+              <img src={Avatar} alt="user" />
+            </button>
+            <button className="avatar">
+              <img src={Avatar} alt="user" />
+            </button>
           </div>
-        </div>
-        <div className="code-example">
-          <div className="avatar light user-avatar">
-            <img src={Avatar} alt="user" />
-            <span>My Account</span>
-            <i className="i-right" />
+          <div className="code-example">
+            <div className="avatar user-avatar">
+              <img src={Avatar} alt="user" />
+              <span>My Account</span>
+              <i className="i-right" />
+            </div>
           </div>
-        </div>
-        <div className="code-example">
-          <div className="avatar avatar-lg light user-avatar">
-            <img src={Avatar} alt="user" />
-            <span>John Doe</span>
-            <i className="i-right" />
+          <div className="code-example">
+            <div className="avatar avatar-lg light user-avatar">
+              <img src={Avatar} alt="user" />
+              <span>John Doe</span>
+              <i className="i-right" />
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDAvatarWithUser} />

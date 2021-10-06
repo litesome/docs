@@ -143,6 +143,22 @@ const Helpers = () => {
             <code className="code-wrapper">.rounded</code> class make
           </li>
         </ul>
+        <h2>Breadcrumbs</h2>
+        <ul className="breadcrumbs">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Products</a>
+          </li>
+          <li>
+            <a href="/">Fruits</a>
+          </li>
+          <li>
+            <a href="/">Apples</a>
+          </li>
+          <li>Green apples by Frulep</li>
+        </ul>
       </DocLayout>
     </>
   );

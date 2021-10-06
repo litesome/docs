@@ -9,6 +9,7 @@ import box from "./box";
 import components from "./components";
 import buttons from "./buttons";
 import alerts from "./alerts";
+import badge from "./badge";
 import forms from "./forms";
 import lists from "./lists";
 import navbar from "./navbar";
@@ -40,6 +41,7 @@ const Routes = [
     components,
     buttons,
     alerts,
+    badge,
     forms,
     lists,
     navbar,
