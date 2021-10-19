@@ -1,5 +1,8 @@
 import DocLayout from "../../../layouts/Docs/index";
-
+import { CodeHighlighter } from "../../common/highlighter";
+const MDAlignLeft = `<div class="left-align"></div>`;
+const MDAlignCenter = `<div class="center-align"></div>`;
+const MDAlignRight = `<div class="right-align"></div>`;
 const Helpers = () => {
   return (
     <>
@@ -28,6 +31,9 @@ const Helpers = () => {
         <div className="right-align text-danger lead">
           Text aligned in the center
         </div>
+        <CodeHighlighter code={MDAlignLeft} />
+        <CodeHighlighter code={MDAlignCenter} />
+        <CodeHighlighter code={MDAlignRight} />
         <h2>3. Spacing</h2>
         <div>
           Set of spacing classes that includes vertical and horizontal
@@ -78,6 +84,27 @@ const Helpers = () => {
           <div className="white my-md py-sm">.py-sm</div>
           <div className="white my-md py-md">.py-md</div>
           <div className="white my-md py-lg">.py-lg</div>
+        </div>
+        <h5>Add one sided-margin</h5>
+        <div>
+          The format of the class should be composed by:{" "}
+          <span className="text-danger">m</span> followed by side prefix (
+          <span className="text-danger">t-,b-,r-, or l-</span>) and media query
+          breakpoints suffix
+          <span className="text-danger">-sm, -md or -lg</span>
+        </div>
+        <div>
+          Example: <code className="code-wrapper">.ml-lg</code>
+        </div>
+        <h5>Removing sided-margin</h5>
+        <div>
+          The format of the class should be composed by:{" "}
+          <span className="text-danger">m</span> followed by side prefix (
+          <span className="text-danger">t-,b-,r-, or l-</span>) and{" "}
+          <span className="text-danger">-none</span>
+        </div>
+        <div>
+          Example: <code className="code-wrapper">.mt-none</code>
         </div>
         <h2>4. Hiding element</h2>
         <p>

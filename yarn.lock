@@ -1467,10 +1467,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@litesome/litesome@^0.1.17":
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/@litesome/litesome/-/litesome-0.1.17.tgz#00ed3a8a58a739ff5f6df957dedaa7cdfbcb840d"
-  integrity sha512-ZhfkYfpcyY96dfF6xMxQ761onKGDhkz3bdbCNHkP0jvbq56StA8MzH+IwSErOYxYPUlw1U8+Lcj/rd4T9OWaNw==
+"@litesome/litesome@^0.1.20":
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/@litesome/litesome/-/litesome-0.1.20.tgz#c84a2788bfc53b25104355053a4fdd816c967139"
+  integrity sha512-juZeAG2jvYM9QBnX4r1zui8m6shQhSDeXcgL7n/QvlN7M/QpTg6aDB2SpLtNVOWWY5XvcoAlsMgiw4OtxaovnQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -43,17 +43,19 @@ const Box = () => {
               </p>
             </div>
             <div className="box-footer">
-              <span className="left">
-                <button type="button" className="secondary">
+              <div className="button-group pull-left">
+                <button type="button" className="button secondary">
                   Back
                 </button>
-              </span>
-              <span className="right">
-                <button type="button" className="secondary">
-                  Save &amp; Continue
+              </div>
+              <div className="button-group pull-right">
+                <button type="button" className="button secondary">
+                  Save &amp; Proceed
                 </button>
-                <button type="button">Send</button>
-              </span>
+                <button type="button" className="button">
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -154,10 +156,10 @@ const Box = () => {
                   </p>
                 </div>
                 <div className="box-footer">
-                  <button type="button">
+                  <button type="button" className="button">
                     Primary
                   </button>
-                  <button type="button" className="secondary">
+                  <button type="button" className="button secondary">
                     Light
                   </button>
                 </div>
