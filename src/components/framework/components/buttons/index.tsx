@@ -1,12 +1,12 @@
 import DocLayout from "../../../../layouts/Docs/index";
 import { CodeHighlighter } from "../../../common/highlighter";
 
-const MDButtonsDefault = `<button type='button' class="button">Primary</button>`;
+const MDButtonsDefault = `<div className="button-group pull-left"><button type='button' class="button">Primary</button>`;
 const MDButtons = `<button type="button" class="button">Get started</button>
 <button type="button" class="button outline">Outline</button>
 <button type="button" class="button secondary">Secondary</button>
 <button type="button" class="button danger">Danger</button>
-<button type="button" class="button" disabled>Disabled</button>`;
+<button type="button" class="button" disabled>Disabled</button></div>`;
 const MDButtonWithSpinners = `<button type="button" class="button"><span class="loading" />Get started</button>
 <button type="button" class="button outline"><span class="loading" />Outline</button>
 <button type="button" class="button secondary"><span class="loading" />Get started</button>
@@ -33,54 +33,104 @@ const Buttons = () => {
           By default, a button without any class takes primary background color
           of the platform
         </div>
-        <button type="button" className="button">Submit</button>
-        <a href="/" className="button">Submit</a>
+        <button type="button" className="button">
+          Submit
+        </button>
+        <a href="/" className="button">
+          Submit
+        </a>
         <CodeHighlighter code={MDButtonsDefault} />
         <h2>Button variants</h2>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button">
-              Get started
-            </button>
-            <button type="button" className="button outline">
-              Outline
-            </button>
-            <button type="button" className="button secondary">
-              Secondary
-            </button>
-            <button type="button" className="button danger">
-              Danger
-            </button>
-            <button type="button"  className="button" disabled>
-              Disabled
-            </button>
-            <button type="button" className="button outline" disabled>
-              Disabled
-            </button>
+            <div className="button-group pull-left">
+              <button type="button" className="button">
+                Get started
+              </button>
+              <button type="button" className="button outline ml-none">
+                Outline
+              </button>
+              <button type="button" className="button secondary ml-none">
+                Secondary
+              </button>
+              <button type="button" className="button danger">
+                Danger
+              </button>
+              <button type="button" className="button" disabled>
+                Disabled
+              </button>
+              <button type="button" className="button outline" disabled>
+                Disabled
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="code-example">
+            <div className="button-group pull-right">
+              <button type="button" className="button">
+                Get started
+              </button>
+              <button type="button" className="button outline">
+                Outline
+              </button>
+              <button type="button" className="button secondary">
+                Secondary
+              </button>
+              <button type="button" className="button danger">
+                Danger
+              </button>
+              <button type="button" className="button" disabled>
+                Disabled
+              </button>
+              <button type="button" className="button outline" disabled>
+                Disabled
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="code-example">
+            <div className="button-group pull-left">
+              <a href="/" className="button">
+                Get started
+              </a>
+              <a href="/" className="button outline">
+                Outline
+              </a>
+              <a href="/" className="button secondary">
+                Secondary
+              </a>
+              <a href="/" className="button danger">
+                Danger
+              </a>
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDButtons} />
         <h2>Button with spinners</h2>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button">
-              <span className="loading" /> Get started
-            </button>
-            <button type="button" className="button outline">
-              <span className="loading" />
-              Outline
-            </button>
-            <button type="button" className="button secondary">
-              <span className="loading" /> Get started
-            </button>
-            <button type="button" className="button danger">
-              <span className="loading" />
-              Danger
-            </button>
-            <button type="button" className="button" disabled>
-              <span className="loading" />
-              Disabled
-            </button>
+            <div className="button-group pull-left">
+              <button type="button" className="button">
+                <span className="loading" /> Get started
+              </button>
+              <button type="button" className="button outline">
+                <span className="loading" />
+                Outline
+              </button>
+              <button type="button" className="button secondary">
+                <span className="loading" /> Get started
+              </button>
+              <button type="button" className="button danger">
+                <span className="loading" />
+                Danger
+              </button>
+              <button type="button" className="button" disabled>
+                <span className="loading" />
+                Disabled
+              </button>
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDButtonWithSpinners} />
@@ -90,15 +140,17 @@ const Buttons = () => {
         <h3>Sizes of buttons</h3>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button button primary button-lg">
-              Large Button
-            </button>
-            <button type="button" className="button button primary">
-              Default size
-            </button>
-            <button type="button" className="button button primary button-sm">
-              Small Button
-            </button>
+            <div className="button-group pull-left">
+              <button type="button" className="button button primary button-lg">
+                Large Button
+              </button>
+              <button type="button" className="button button primary">
+                Default size
+              </button>
+              <button type="button" className="button button primary button-sm">
+                Small Button
+              </button>
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDButtonSize} />
@@ -114,18 +166,24 @@ const Buttons = () => {
         <h3>Buttons with icons</h3>
         <div className="box">
           <div className="code-example">
-            <button type="button" className="button">
-              <i className="i-message" /> Message
-            </button>
-            <button type="button" className="button outline">
-              <i className="i-check" /> Confirm action
-            </button>
-            <button type="button" className="button secondary">
-              <i className="i-check" /> Confirm action
-            </button>
-            <button type="button" className="button danger">
-              <i className="i-play" /> Play song
-            </button>
+            <div className="button-group pull-left">
+              <button type="button" className="button">
+                <i className="i-message" />
+                Message
+              </button>
+              <button type="button" className="button outline">
+                <i className="i-check" />
+                Confirm action
+              </button>
+              <button type="button" className="button secondary">
+                <i className="i-check" />
+                Confirm action
+              </button>
+              <button type="button" className="button danger">
+                <i className="i-play" />
+                Play song
+              </button>
+            </div>
           </div>
         </div>
         <CodeHighlighter code={MDButtonsWithIcons} />
